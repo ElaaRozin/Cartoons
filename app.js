@@ -9,7 +9,7 @@ app.get("/customers",async (req,res)=>{
 })
 //--------------------------------------------------
 
-
+app.use(express.static("public"))
 
 const server = app.listen(3002, function () {
     const host = server.address().address
